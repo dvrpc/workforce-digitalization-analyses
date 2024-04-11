@@ -1,0 +1,183 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+.chart {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#region-total,
+#region-total-automation,
+#region-total-telework,
+#geography-total,
+#geography-total-automation,
+#geography-total-telework {
+  color: #2b1956;
+  display: inline;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.sector-stat {
+  color: #662d91;
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#comparison {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 95vw;
+  height: 30vh;
+}
+
+#sector-charts {
+  order: 0;
+  margin: 0;
+  width: 95vw;
+  height: auto;
+}
+
+.sectors {
+  order: 1;
+  width: auto;
+}
+
+#geography-sectors,
+#region-sectors,
+#geography-automation-sectors,
+#region-automation-sectors,
+#geography-telework-sectors,
+#region-telework-sectors {
+  display: flex;
+}
+
+.sector {
+  display: block;
+  flex: 1 1 0px;
+}
+
+.sector-stat {
+  margin-bottom: 0px;
+}
+
+.geography-header {
+  margin: 0px;
+}
+
+.sectors {
+  margin-top: 0px;
+}
+
+.chart-container {
+  min-width: 95vw;
+  height: 30vh;
+}
+
+@media screen and (min-width: 768px) {
+  .bubbles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20px 20px 1fr;
+  }
+
+  .chart-container {
+    height: 50vh;
+    min-width: 49vw;
+  }
+
+  #geography-select {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    width: 20%;
+  }
+
+  #geography-bubble-header {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  #geography-bubble-container {
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+
+  #region-bubble-header {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  #region-bubble-container {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  #comparison {
+    display: grid;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-template-rows: 20px 1fr;
+  }
+
+  #sector-charts {
+    width: 50%;
+    grid-column-start: 2;
+  }
+
+  #region-sector-stats {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  #geography-sector-stats {
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+
+  #geography-sectors,
+  #region-sectors,
+  #geography-automation-sectors,
+  #region-automation-sectors,
+  #geography-telework-sectors,
+  #region-telework-sectors {
+    flex-direction: column;
+  }
+
+  .total-stat {
+    display: flex;
+    align-items: center;
+  }
+
+  .sector {
+    display: flex;
+    align-items: center;
+  }
+
+  .sector-name {
+    margin-bottom: 1rem;
+  }
+
+  .sector-stat {
+    color: #662d91;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
