@@ -19,6 +19,42 @@ h6 {
   margin: 0px;
 }
 
+header {
+  color: white;
+  background-color: #643b83;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#dvrpc-mini {
+  width: 10vw;
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+  fill: white;
+}
+
+.nav {
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  margin: 2.5rem;
+}
+
 .chart {
   display: none;
 }
@@ -111,7 +147,7 @@ h6 {
 
   .chart-container {
     height: 50vh;
-    min-width: 49vw;
+    min-width: 40vw;
   }
 
   #geography-select {
@@ -147,7 +183,7 @@ h6 {
   }
 
   #sector-charts {
-    width: 50%;
+    width: 48vw;
     grid-column-start: 2;
   }
 
